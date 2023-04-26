@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/public/images/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  display: flex;
+}
+
+.textContainer {
+  width: 40%;
+  height: 100%;
+  padding: 2rem;
+  background-color: rgba(30, 61, 61, 0.8);
+  color: #fff;
+}
+
+.textContainer h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.textContainer p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.textContainer button {
+  padding: 0.7rem 1.2rem;
+  background-color: #18c7c799;
+  color: #000;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.textContainer button:hover {
+  background-color: #18c7c7;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  .textContainer {
+    width: 40%;
+    padding-top: 3rem;
+  }
+
+  .textContainer h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .textContainer {
+    padding-top: 4rem;
+  }
+
+  .textContainer h2 {
+    font-size: 2rem;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
+  }
+
+  .textContainer button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 70vh;
+  }
+
+  .textContainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .textContainer h2,
+  .textContainer p {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}

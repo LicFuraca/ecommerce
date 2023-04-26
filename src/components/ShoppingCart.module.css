@@ -1,0 +1,115 @@
+.shoppingCartContainer {
+  padding: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: -500px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+  transition: all 1s ease-out;
+  z-index: -1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.shoppingCartContainer h3 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.cartList {
+  margin: 1rem 0 2rem 0;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: auto 75% auto auto;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  background-color: #fff;
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.cartItem .delete {
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cartItem .delete:hover {
+  color: #da1d1d;
+}
+
+.total {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.total h3 {
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 0.5rem;
+}
+
+.total span {
+  font-weight: 700;
+}
+
+.emptyCartText {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.shoppingCartContainer .actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shoppingCartContainer button {
+  min-width: 80px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0 0;
+  background-color: #18c7c7;
+  border: 2px solid #18c7c7;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.shoppingCartContainer button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.shoppingCartContainer .clearBtn {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0 0;
+  background-color: #b1b3b3;
+  border: 2px solid #b1b3b3;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.shoppingCartContainer .clearBtn:hover {
+  background-color: #555656;
+  border-color: #555656;
+  color: #fff;
+}
+
+.showCart {
+  opacity: 1;
+  top: 104%;
+  z-index: 100;
+}

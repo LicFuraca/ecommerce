@@ -1,0 +1,136 @@
+.container {
+  padding: 5rem 2rem;
+}
+
+.content {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 380px;
+  height: auto;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.imgContainer img {
+  width: 100%;
+  position: relative;
+}
+
+.figure {
+  width: 380px;
+  height: 380px;
+  background-color: #18c7c7;
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+}
+
+.textContainer {
+  width: 40%;
+}
+
+.textContainer h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.badgesContainer {
+  padding: 1.7rem 1rem;
+  min-width: 500px;
+  position: absolute;
+  bottom: -4.5rem;
+  left: 40%;
+  background-color: #00000089;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.badgesContainer hr {
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  border: none;
+  transform: rotate(90deg);
+}
+
+.badge {
+  text-align: center;
+}
+
+.badge h4 {
+  font-size: 1.4rem;
+}
+
+.badge span {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .textContainer h3 {
+    font-size: 3rem;
+  }
+
+  .figure {
+    height: 280px;
+    width: 280px;
+  }
+
+  .imgContainer {
+    width: 280px;
+  }
+
+  .content {
+    align-items: start;
+  }
+
+  .badgesContainer {
+    min-width: 330px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContainer {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .badgesContainer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 1rem;
+  }
+
+  .figure {
+    display: none;
+  }
+
+  .imgContainer {
+    width: 90%;
+    order: 2;
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+}

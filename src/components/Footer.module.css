@@ -1,0 +1,98 @@
+.container {
+  margin-top: 10rem;
+  position: relative;
+  text-align: center;
+}
+
+.boxContainer {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  flex: 1;
+  height: 200px;
+}
+
+.light {
+  background-color: #4aeaea;
+}
+
+.dark {
+  background-color: #18c7c7;
+}
+
+.footerEnd {
+  height: 200px;
+  background-color: #424343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navList {
+  width: 60%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navList li a {
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.navList li a:hover {
+  color: #18c7c7;
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.followUs {
+  height: 80px;
+  padding: 1.2rem 1.5rem;
+  background-color: #e6f2f8;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  position: absolute;
+  top: calc(50% - 2.4rem);
+  left: calc(50% - 210px);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.followUs:hover {
+  background-color: #73777a;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .followUs {
+    font-size: 1rem;
+    height: 60px;
+    padding: 1rem 1.2rem;
+    top: 23%;
+    left: calc(50% - 164px);
+  }
+
+  .container {
+    margin-top: 5rem;
+  }
+
+  .box {
+    height: 100px;
+  }
+
+  .navList li a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,39 @@
+.footer {
+  padding: 2rem 2rem 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  font-size: 0.9rem;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerNav li a {
+  margin-right: 1rem;
+  text-transform: capitalize;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer span {
+    margin-top: 1.5rem;
+    order: 2;
+  }
+
+  .footerNav li a {
+    font-size: 0.8rem;
+  }
+}
