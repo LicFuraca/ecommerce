@@ -1,130 +1,147 @@
 .navbar {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #18c7c7;
-  position: relative;
+	padding: 1rem 2rem;
+	border-bottom: 2px solid #18c7c7;
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+	flex: 1;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .center {
-  flex: 1;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.5rem;
+	flex: 1;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.5rem;
 }
 
 .right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+	flex: 1;
+
+	display: flex;
+	justify-content: flex-end;
 }
 
 .right ul,
 .left ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .right ul li,
 .left ul li {
-  margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 .right ul li a,
 .left ul li a {
-  color: #000;
-  font-size: 1.1rem;
-  text-decoration: none;
+	color: #000;
+	font-size: 1.1rem;
+	text-decoration: none;
 }
 
 .right ul li a:hover,
 .left ul li a:hover {
-  color: #18c7c7;
+	color: #18c7c7;
 }
 
 .cartIcon {
-  color: #000;
-  font-size: 1.1rem;
+	color: #000;
+	font-size: 1.1rem;
 }
 
 .cartIcon:hover {
-  cursor: pointer;
-  color: #18c7c7;
+	cursor: pointer;
+	color: #18c7c7;
 }
 
 .logout {
-  padding: 0.5rem 1rem;
-  border: 1px solid #18c7c7;
-  border-radius: 5px;
-  background-color: #fff;
-  cursor: pointer;
+	padding: 0.5rem 1rem;
+	border: 1px solid #18c7c7;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
 }
 
 .logout:hover {
-  background-color: #18c7c7;
-  color: #fff;
+	background-color: #18c7c7;
+	color: #fff;
 }
 
 .menuToggle {
-  display: none;
-  cursor: pointer;
+	display: none;
+	cursor: pointer;
 }
 
 .menuToggle:hover {
-  color: #18c7c7;
+	color: #18c7c7;
 }
 
 @media (max-width: 768px) {
-  .showMenuToggle {
-    display: inline;
-  }
+	.showMenuToggle {
+		display: inline;
+	}
 
-  .left,
-  .right {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: block;
-    background-color: #fff;
-    width: 100%;
-  }
+	.left,
+	.right {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: block;
+		background-color: #fff;
+		width: 100%;
+	}
 
-  .left ul {
-    display: block;
-    width: 100%;
-  }
+	.left ul {
+		display: block;
+		width: 100%;
+	}
 
-  .right ul {
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 2.5rem;
-    background-color: #fff;
-  }
+	.right ul {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 2.5rem;
+		background-color: #fff;
+	}
 
-  .left ul li,
-  .right ul li {
-    margin: 0.5rem 2rem;
-  }
+	.left ul li,
+	.right ul li {
+		margin: 0.5rem 2rem;
+	}
 
-  .left ul li:nth-child(1) {
-    margin-top: 0;
-  }
+	.left ul li:nth-child(1) {
+		margin-top: 0;
+	}
 
-  .hideNav {
-    display: none;
-  }
+	.hideNav {
+		display: none;
+	}
 
-  .center {
-    font-size: 0.9rem;
-  }
+	.center {
+		font-size: 0.9rem;
+	}
+
+	.logout {
+		padding: 0;
+		border: none;
+		border-radius: none;
+		background-color: none;
+		cursor: pointer;
+		font-size: 1.1rem;
+	}
+
+	.logout:hover {
+		background-color: none;
+		color: initial;
+	}
 }
